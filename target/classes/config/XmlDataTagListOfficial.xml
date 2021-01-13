@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DataTagList>
+    <DataTag>
+        <internalId>1</internalId>
+        <tagId>1</tagId>
+        <tagName>battery storage</tagName>
+        <tagType>process</tagType>
+        <valueType>0</valueType>
+        <engUnits>percent</engUnits>
+        <incrementDeadBand>1</incrementDeadBand>
+        <decrementDeadBand>1</decrementDeadBand>
+    </DataTag>
+    <DataTag>
+        <internalId>2</internalId>
+        <tagId>2</tagId>
+        <tagName>battery storage alarm</tagName>
+        <tagType>alarm</tagType>
+        <valueType>1</valueType>
+        <engUnits>boolean</engUnits>
+        <incrementDeadBand>1</incrementDeadBand>
+        <decrementDeadBand>1</decrementDeadBand>
+    </DataTag>
+    <DataTag>
+        <internalId>3</internalId>
+        <tagId>3</tagId>
+        <tagName>speed</tagName>
+        <tagType>process</tagType>
+        <valueType>0</valueType>
+        <engUnits>km/h</engUnits>
+        <incrementDeadBand>1</incrementDeadBand>
+        <decrementDeadBand>1</decrementDeadBand>
+    </DataTag>
+    <DataTag>
+        <internalId>4</internalId>
+        <tagId>4</tagId>
+        <tagName>speed limit</tagName>
+        <tagType>alarm</tagType>
+        <valueType>1</valueType>
+        <engUnits>boolean</engUnits>
+        <incrementDeadBand>1</incrementDeadBand>
+        <decrementDeadBand>1</decrementDeadBand>
+    </DataTag>
+</DataTagList>

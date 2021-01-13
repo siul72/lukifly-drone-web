@@ -1,0 +1,272 @@
+@mixin vehicle {
+
+  /* Grid with grid! */
+
+  .v-offline {
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid lightgrey;
+  }
+
+  .v-online {
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid lightgrey;
+    background-color: lightgreen;
+  }
+
+  .v-suspended {
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid lightgrey;
+    background-color: yellowgreen;
+  }
+
+  .v-offline:hover{
+    cursor: grab;
+  }
+
+  .v-online:hover{
+    cursor: grab;
+  }
+
+  .v-suspended:hover{
+    cursor: grab;
+  }
+
+
+  .v-instruments-offline{
+    background-color: red;
+  }
+
+  .v-instruments-online{
+    background-color: gold;
+  }
+
+  .v-instruments-suspended{
+    background-color: yellowgreen;
+  }
+
+  .v-alarm-new{
+
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid darkgray;
+    background-color: #FFD27C;
+
+  }
+
+  .v-alarm-new-fresh{
+
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid darkgray;
+    background-color: #FFAA00;
+
+  }
+
+  .v-alarm-old{
+
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid darkgray;
+    background-color: #DDDDDD;
+
+  }
+
+  .v-alarm-new-element:hover{
+
+    background-color: orange;
+  }
+
+  .v-find-map:hover {
+    cursor: pointer;
+  }
+
+
+  .v-alarm-ticked{
+
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid darkgray;
+    background-color: lightgray;
+
+  }
+
+
+  .v-alarm-ticked-element:hover{
+
+    background-color: gray;
+  }
+
+  .v-blink {
+    -webkit-animation: alarm-blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate; /* Chrome, Safari, Opera */
+    animation: alarm-blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+  }
+
+
+  .v-alarm-env-none{
+
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid darkgray;
+    background-color: lightgray;
+
+  }
+
+  .v-alarm-env-start{
+
+    margin: 1px;
+    padding: 1px;
+    border: 3px solid darkgray;
+    background-color: orange;
+
+
+
+  }
+
+  .v-alarm-env-next{
+
+    margin: 1px;
+    padding: 1px;
+    border: 3px solid darkgray;
+    background-color: lightgreen;
+
+  }
+
+  .v-alarm-env-end{
+
+    margin: 1px;
+    padding: 1px;
+    border: 3px solid darkgray;
+    background-color: lightgray;
+
+  }
+
+  .v-session-refresh:hover{
+    background-color: orange;
+  }
+
+//  .v-button { }
+//  .v-button-wrap { }
+//  .v-button-caption { }
+
+  .v-button-paging  {
+    width: 40px;
+    height: 28px;
+    background:#FFF;
+    text-align: center;
+    margin:0px 3px 10px;
+
+
+  }
+
+  .v-button-paging:hover {
+
+    background:#DDDDDD;
+
+  }
+
+
+  .page-active {
+    background:#AAAAAA;
+  }
+
+  .v-button-paging .v-button-caption {
+    color: #000000;
+    font-size:large;
+    text-align: center;
+
+  }
+
+  .v-button-paging .v-button-wrap {
+    background:none;
+    position:relative;
+    top:7px;
+    left:-5px;
+  }
+
+  .v-button-paging  .v-button {
+    background:none;
+  }
+
+  .v-button-paging:focus .v-button-wrap {
+    background:none;
+  }
+
+  .v-button-paging:active .v-button-wrap {
+    background:none;
+  }
+
+  .v-button-paging:active ,
+  .v-button.v-pressed {
+    background:none;
+  }
+
+
+  /*==================================================
+   * Effect 4
+   * ===============================================*/
+  .effect4
+  {
+    position: relative;
+  }
+  .effect4:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    right: 10px;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  /*==================================================
+ * Effect 7
+ * ===============================================*/
+  .effect7
+  {
+    position:relative;
+    -webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  }
+  .effect7:before, .effect7:after
+  {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.8);
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:5px;
+    right:5px;
+    -moz-border-radius:50px / 5px;
+    border-radius:50px / 5px;
+  }
+  .effect7:after
+  {
+    right:5px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+  }
+
+
+}

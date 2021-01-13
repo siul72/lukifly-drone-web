@@ -1,0 +1,86 @@
+/* Import the reindeer theme. */
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+@import "menu.scss";
+@import "vehicle.scss";
+
+/* This contains all of your theme. */
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin mytheme {
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+
+  /* Insert your theme rules here */
+  @include menu;
+
+  @include vehicle;
+
+  .image-popup {
+    //  image you want to see
+    background: url('./icons/user_settings.png') no-repeat scroll center
+    center transparent !important;
+    //  no underline text in popup
+    text-decoration: none;
+  }
+
+  .filter-popup {
+    //  image you want to see
+    background: url('./icons/filter.png') no-repeat scroll center
+    center transparent !important;
+    //  no underline text in popup
+    text-decoration: none;
+  }
+
+  .v-label-alarm {
+    //  image you want to see
+    background-size: 32px 32px;
+    background: url('./icons/alert_count_small.png') no-repeat;
+    padding-top: 12px;
+    //  no underline text in popup
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    //font-size:large;
+  }
+
+  .v-image-fav-on {
+    //  image you want to see
+    background-size: 32px 32px;
+    background: url('./icons/fav_on.png') no-repeat;
+    padding-top: 12px;
+    //  no underline text in popup
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    //font-size:large;
+  }
+
+  .v-image-fav-off {
+    //  image you want to see
+    background-size: 32px 32px;
+    background: url('./icons/fav_off.png') no-repeat;
+    padding-top: 12px;
+    //  no underline text in popup
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    //font-size:large;
+  }
+
+  .v-image-fav-on:hover{
+    cursor:pointer;
+  }
+
+  .v-image-fav-off:hover{
+    cursor:pointer;
+  }
+
+
+
+
+
+
+}

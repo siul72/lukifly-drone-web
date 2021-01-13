@@ -1,0 +1,92 @@
+@mixin menu {
+
+.mytheme .v-menubar-menuitem-highlight {
+  background: #000040; /* Dark blue */
+}
+
+  .mytheme .v-menubar {
+  height: 80px;
+  background: #ffffff repeat-x;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
+  padding: 0 8px;
+}
+
+  .mytheme .v-menubar .v-menubar-menuitem {
+  padding: 3px 8px;
+  height: 75px;
+  line-height: 24px;
+}
+
+  .mytheme .v-menubar .v-menubar-menuitem:hover {
+  color: #fff;
+}
+
+  .mytheme .v-menubar-submenu {
+  background: #ffffff;
+  border: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+  .mytheme .v-menubar-submenu .v-menubar-menuitem {
+  padding: 1px 50px 1px 10px;
+  line-height: 50px;
+}
+
+  .mytheme .v-menubar-submenu .v-menubar-menuitem-caption .v-icon {
+  vertical-align: middle;
+}
+
+  .mytheme .v-menubar .v-menubar-menuitem-selected, .mymenubar .v-menubar-submenu .v-menubar-menuitem-selected {
+  background: #ffffff repeat-x;
+  background-image: url(../reindeer/common/img/sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat */
+  color: #fff;
+  text-shadow: 0 1px 0 #3b5a7a;
+}
+
+}
+
+.mytheme .v-menubar .v-menubar-menuitem-selected {
+  background-image: url(../reindeer/menubar/img/menu-sel-bg.png);/** sprite-ref: verticals; sprite-alignment: repeat; sprite-margin-bottom: 1px  */
+}
+
+.mytheme .v-menubar-submenu .v-menubar-submenu-indicator {
+  background: transparent url(../reindeer/menubar/img/submenu-icon.png) no-repeat right 70%;
+  width: 26px;
+  height: 16px;
+  text-indent: -9999px;
+  font-size: 10.8px;
+}
+
+.mytheme .v-menubar-submenu .v-menubar-menuitem-selected .v-menubar-submenu-indicator {
+  background-image: url(../reindeer/menubar/img/submenu-icon-hover.png);
+}
+
+.mytheme .v-menubar-submenu-check-column .v-menubar-menuitem {
+  padding-left: 6px;
+}
+
+.mytheme .v-menubar-submenu-check-column .v-menubar-menuitem-caption {
+  padding-left: 18px;
+}
+
+.mytheme .v-menubar-submenu .v-menubar-menuitem-checked .v-menubar-menuitem-caption {
+  background: transparent url(../reindeer/menubar/img/checked.png) no-repeat left;
+}
+
+.mytheme .v-menubar-submenu .v-menubar-menuitem-unchecked .v-menubar-menuitem-caption {
+  background: transparent url(../reindeer/menubar/img/unchecked.png) no-repeat left;
+}
+
+.mytheme .v-menubar-submenu .v-menubar-menuitem-selected-checked .v-menubar-menuitem-caption {
+  background: transparent url(../reindeer/menubar/img/checked-selected.png) no-repeat left;
+}
+
+.mytheme .v-menubar-submenu .v-menubar-menuitem-selected-unchecked .v-menubar-menuitem-caption {
+  background: transparent url(../reindeer/menubar/img/unchecked-selected.png) no-repeat left;
+}

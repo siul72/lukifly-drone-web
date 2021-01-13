@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VehicleList>
+    <Vehicle>
+        <internalId>1</internalId>
+        <vehicleID>1234567890</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+       <Vehicle>
+        <internalId>2</internalId>
+        <vehicleID>1234567891</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+       <Vehicle>
+        <internalId>3</internalId>
+        <vehicleID>1234567892</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+    <Vehicle>
+        <internalId>4</internalId>
+        <vehicleID>1234567893</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+       <Vehicle>
+        <internalId>5</internalId>
+        <vehicleID>1234567894</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+     <Vehicle>
+        <internalId>6</internalId>
+        <vehicleID>1234567895</vehicleID>
+        <smsNumber>233434234</smsNumber>
+    </Vehicle>
+</VehicleList>
